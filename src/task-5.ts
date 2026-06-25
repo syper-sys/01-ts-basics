@@ -1,8 +1,6 @@
 type Status = "loading" | "success" | "error";
 
-let status: Status;
-
-function logStatus(status: string): void {
+function logStatus(status: Status): void {
   if (status === "loading") {
     console.log("Loading...");
   } else if (status === "success") {
